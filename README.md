@@ -1,30 +1,30 @@
 Cryptocurrency App Code
 ==================================
 
-This project has been developed with the help of youtube tutorial:
+This project has been developed with the help of youtube tutorial:<br>
 https://www.youtube.com/watch?v=EF33KmyprEQ&list=PLOf92TQmqSoji7is_hRgOcU80TIjwpG29&index=19&t=2779s
 
-The original source code can be downloaded from github:
+The original source code can be downloaded from github:<br>
 https://github.com/philipplackner/CryptocurrencyAppYT/tree/app
 
 Introduction
 ------------
 
-Cryptocurrency is designed using MVVM clean architecture using Jetpack Compose in a single module. 
-Retrofit library is used for interacting with coin paprika api.
-Coin Paprika API:
+Cryptocurrency is designed using MVVM clean architecture using Jetpack Compose in a single module. <br>
+Retrofit library is used for interacting with coin paprika api.<br>
+Coin Paprika API:<br>
 coinpaprika.com
 
-This app contains three layers:
+This app contains three layers:<br>
 a) Data Layer: This layer contains all the data related logic (databases, api calls and 
-  implementations, etc).
-b) Domain Layer: This layer contains only the business logic.
+  implementations, etc).<br>
+b) Domain Layer: This layer contains only the business logic.<br>
 c) Presentation Layer: The layer contains all the UI logic and it is further divided into
-  components. It contains the screens, states and view models.
+  components. It contains the screens, states and view models. <br>
 
-This app lets you:
-a) browse the list of various cryptocurrencies obtained from coin paprika.
-b) get detailed information about any cryptocurrency.
+This app lets you:<br>
+a) browse the list of various cryptocurrencies obtained from coin paprika.<br>
+b) get detailed information about any cryptocurrency.<br>
 
 
 Pre-requisites
