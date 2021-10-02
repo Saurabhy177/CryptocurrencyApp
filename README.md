@@ -16,10 +16,10 @@ Coin Paprika API:<br>
 coinpaprika.com
 
 This app contains three layers:<br>
-a) Data Layer: This layer contains all the data related logic (databases, api calls and 
+a) <b>Data Layer:</b> This layer contains all the data related logic (databases, api calls and 
   implementations, etc).<br>
-b) Domain Layer: This layer contains only the business logic.<br>
-c) Presentation Layer: The layer contains all the UI logic and it is further divided into
+b) <b>Domain Layer:</b> This layer contains only the business logic.<br>
+c) <b>Presentation Layer:</b> The layer contains all the UI logic and it is further divided into
   components. It contains the screens, states and view models. <br>
 
 This app lets you:<br>
