@@ -1,6 +1,6 @@
 package com.example.cryptocurrencyapp.domain.usecases.get_coins
 
-import com.example.cryptocurrencyapp.common.Resource
+import com.example.cryptocurrencyapp.core.util.Resource
 import com.example.cryptocurrencyapp.data.remote.dto.toCoin
 import com.example.cryptocurrencyapp.domain.model.Coin
 import com.example.cryptocurrencyapp.domain.repository.CoinRepo

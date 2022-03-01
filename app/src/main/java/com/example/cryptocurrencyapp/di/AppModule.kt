@@ -1,6 +1,6 @@
 package com.example.cryptocurrencyapp.di
 
-import com.example.cryptocurrencyapp.common.Constants
+import com.example.cryptocurrencyapp.core.util.Constants
 import com.example.cryptocurrencyapp.data.remote.CoinPaprikaApi
 import com.example.cryptocurrencyapp.data.repository.CoinRepoImpl
 import com.example.cryptocurrencyapp.domain.repository.CoinRepo

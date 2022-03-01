@@ -10,7 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.cryptocurrencyapp.presentation.coin_detail.CoinDetailScreen
 import com.example.cryptocurrencyapp.presentation.coin_list.CoinListScreen
-import com.example.cryptocurrencyapp.presentation.ui.CryptocurrencyAppTheme
+import com.example.cryptocurrencyapp.ui.CryptocurrencyAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

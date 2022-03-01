@@ -1,4 +1,4 @@
-package com.example.cryptocurrencyapp.common
+package com.example.cryptocurrencyapp.core.util
 
 object Constants {
 

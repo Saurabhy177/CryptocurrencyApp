@@ -1,4 +1,4 @@
-package com.example.cryptocurrencyapp.presentation.ui
+package com.example.cryptocurrencyapp.ui
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
