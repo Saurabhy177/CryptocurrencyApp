@@ -5,6 +5,13 @@ import com.example.cryptocurrencyapp.data.remote.dto.CoinDto
 import retrofit2.http.GET
 import retrofit2.http.Path
 
+/**
+ * For Get requests:
+ * @Path is used for adding a path in url concatenated by forward slash
+ * @Query is used for adding variables in url concatenated by '?' and '&'
+ * For Post requests:
+ * @Body is used for sending a bunch of values
+ * */
 interface CoinPaprikaApi {
 
     /**
