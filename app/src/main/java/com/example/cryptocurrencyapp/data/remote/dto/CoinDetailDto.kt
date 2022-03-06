@@ -8,62 +8,62 @@ import com.example.cryptocurrencyapp.domain.model.CoinDetail
 @Keep
 data class CoinDetailDto(
     @SerializedName("description")
-    val description: String,
+    val description: String?,
     @SerializedName("development_status")
-    val developmentStatus: String,
+    val developmentStatus: String?,
     @SerializedName("first_data_at")
-    val firstDataAt: String,
+    val firstDataAt: String?,
     @SerializedName("hardware_wallet")
-    val hardwareWallet: Boolean,
+    val hardwareWallet: Boolean?,
     @SerializedName("hash_algorithm")
-    val hashAlgorithm: String,
+    val hashAlgorithm: String?,
     @SerializedName("id")
-    val id: String,
+    val id: String?,
     @SerializedName("is_active")
-    val isActive: Boolean,
+    val isActive: Boolean?,
     @SerializedName("is_new")
-    val isNew: Boolean,
+    val isNew: Boolean?,
     @SerializedName("last_data_at")
-    val lastDataAt: String,
+    val lastDataAt: String?,
     @SerializedName("links")
-    val links: Links,
+    val links: Links?,
     @SerializedName("links_extended")
-    val linksExtended: List<LinksExtended>,
+    val linksExtended: List<LinksExtended>?,
     @SerializedName("message")
-    val message: String,
+    val message: String?,
     @SerializedName("name")
-    val name: String,
+    val name: String?,
     @SerializedName("open_source")
-    val openSource: Boolean,
+    val openSource: Boolean?,
     @SerializedName("org_structure")
-    val orgStructure: String,
+    val orgStructure: String?,
     @SerializedName("proof_type")
-    val proofType: String,
+    val proofType: String?,
     @SerializedName("rank")
-    val rank: Int,
+    val rank: Int?,
     @SerializedName("started_at")
-    val startedAt: String,
+    val startedAt: String?,
     @SerializedName("symbol")
-    val symbol: String,
+    val symbol: String?,
     @SerializedName("tags")
-    val tags: List<Tag>,
+    val tags: List<Tag>?,
     @SerializedName("team")
-    val team: List<TeamMember>,
+    val team: List<TeamMember>?,
     @SerializedName("type")
-    val type: String,
+    val type: String?,
     @SerializedName("whitepaper")
-    val whitepaper: Whitepaper
+    val whitepaper: Whitepaper?
 )
 
 fun CoinDetailDto.toCoinDetail(): CoinDetail {
     return CoinDetail(
-        coinId = id,
-        name = name,
-        description = description,
-        symbol = symbol,
-        rank = rank,
-        isActive = isActive,
-        tags = tags.map { it.name },
-        team = team
+        coinId = id ?: "",
+        name = name ?: "",
+        description = description ?: "",
+        symbol = symbol ?: "",
+        rank = rank ?: 1,
+        isActive = isActive ?: false,
+        tags = tags?.map { it.name } ?: emptyList(),
+        team = team ?: emptyList()
     )
 }
